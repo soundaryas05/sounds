@@ -163,18 +163,26 @@
 						
 					</div>
 
-				
-
-				
-
-< script type=” text/javascript” src=””>https://www.freevisitorcounters.com/en/home/counter/123456/t/0”>< /script>
-
 
 
 			</div>
-		
+			<div>
+    <p>The number of visitors is : <span id="cntr">0</span></p>
+  </div>
 
 		<!-- Scripts -->
+	
+
+  <script>
+    function counter_fn() {
+      var counter = document.getElementById("cntr");
+      var count = 0;
+      count = parseInt(counter.innerHTML);
+      count = count + 1;
+      counter.innerHTML = count;
+    }
+    window.onload = counter_fn;
+  </script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -185,5 +193,6 @@
 
 	</body>
 </html>
+
 
 
